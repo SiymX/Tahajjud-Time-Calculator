@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Tahajjud Prayer Calculator">
+    <meta property="og:description" content="This calculator is created by Siym.">
+    <title>Tahajjud Time Calculator</title>
+    <link rel="stylesheet" href="tahajjud.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.8.17/dayjs.min.js"></script>
+</head>
+<body>
+
+    <h1>Tahajjud Prayer Calculator</h1>
+    <div id="calculator">
+        <label>Maghrib Time:</label>
+        <input type="number" id="maghribHour" min="1" max="12"> :
+        <input type="number" id="maghribMinute" min="0" max="59">
+        <select id="maghribPeriod">
+            <option value="PM">PM</option>
+            <option value="AM">AM</option>
+        </select>
+ 
+        <label>Fajr Time:</label>
+        <input type="number" id="fajrHour" min="1" max="12"> :
+        <input type="number" id="fajrMinute" min="0" max="59">
+        <select id="fajrPeriod">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+
+        <button onclick="computeTahajjudTimes()">Calculate</button>
+    </div>
+    
+    <div id="results">
+        <p id="midnightTime" class="timeResult"></p>
+        <p id="lastThirdTime" class="timeResult"></p>
+        <p id="disclaimer" class="disclaimer"></p>
+    </div>
+
+    <div id="helpButton">
+        <i class="fas fa-question-circle"></i>
+    </div>
+    <script src="tahajjud.js"></script>
+</body>
+</html>
