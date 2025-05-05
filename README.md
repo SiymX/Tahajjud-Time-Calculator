@@ -1,3 +1,8 @@
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-completed-green)
+![Built with JavaScript](https://img.shields.io/badge/built%20with-JavaScript-yellow)
+
+
 # Tahajjud-Time-Calculator
 This calculator will help users determine the last third of the night and the middle of the night between Maghrib (sunset prayer) and Fajr (dawn prayer), which are optimal times for performing the Tahajjud prayer.
 To test it out check out the calculator on https://www.siym.me/tahajjud.html
